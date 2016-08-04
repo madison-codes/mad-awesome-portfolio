@@ -5,7 +5,7 @@ body {
 }
 
 /*BIO CONTENT ELEMENT*/
-main section {
+.bio-content {
   position:fixed;
   margin-left: 50vw;
   margin-top: 200px;
@@ -69,30 +69,27 @@ p {
 }
 
 /*Past Jobs*/
-
 .work-experience-content {
   position:fixed;
   margin-top: 200px;
   border-radius:20px;
   background-color: white;
-  opacity: .85;
   height: 412px;
   width: 580px;
-  display: flex;
-  flex-direction: column;
+  margin-left: 10vw;
+  display: none;
 }
 
 .experience {
-  margin: auto;
   margin-top: 20px;
   width: 530px;
   height: 150px;
   border-radius:8px;
-  /*opacity: .2;*/
+  /*display: flex;*/
 }
 
 #expereince-trelora {
-  background: url(../images/trelora.jpg) opacity(.2)no-repeat;
+  background: url(../images/trelora.jpg) no-repeat;
   background-size: 530px;
   border: none;
   height: 150px;
@@ -112,9 +109,115 @@ p {
 }
 
 .experience h2 {
-  /*font-size: 200%;*/
-  margin-top: 20px;
-  color: black;
-  z-index: 4;
-  background-color: magenta;
+  font-size: 2em;
+  font-style: bold;
+  color: white;
+  position: absolute;
+  display: inline-block;
 }
+
+.experience p {
+  position: absolute;
+  left: 50px;
+  margin-top: 40px;
+  color: white;
+  display: inline-block;
+}
+
+/*EXPERIENCE SECTION*/
+
+.project-content {
+  display: none;
+  position:fixed;
+  margin-top: 30px;
+  border-radius:20px;
+  background-color: white;
+  height: 930px;
+  width: 580px;
+  margin-left: 30vw;
+  /*display: flex;
+  flex-direction: column;*/
+}
+
+height: 412px;
+width: 580px;
+margin-left: 10vw;
+display: none;
+
+.project {
+  margin: auto;
+  margin-top: 20px;
+  width: 530px;
+  height: 150px;
+  border-radius:8px;
+  color: black;
+  background-size: 530px;
+  height: 150px;
+  width: 530px;
+  margin: 20px;
+  background-position: center;
+}
+
+#number-guesser {
+  background: url(../images/number-guesser.png) no-repeat;
+  background-size: 530px;
+  height: 150px;
+  width: 530px;
+  margin: 20px;
+  background-position: center;
+}
+
+#linked-list {
+  background: url(../images/mod-links.png) no-repeat;
+  background-size: 530px;
+  height: 150px;
+  width: 530px;
+  margin: 20px;
+  background-position: center;
+}
+
+#color-changer {
+  background: url(../images/color-changer.png) no-repeat;
+  background-size: 530px;
+  height: 150px;
+  width: 530px;
+  margin: 20px;
+  background-position: center;
+}
+
+#idea-box {
+  background: url(../images/idea-box.png) no-repeat;
+  background-size: 530px;
+  height: 150px;
+  width: 530px;
+  margin: 20px;
+  background-position: center;
+}
+
+#game-time {
+  background: url(../images/game-time-snake.png) no-repeat;
+  background-size: 530px;
+  height: 150px;
+  width: 530px;
+  margin: 20px;
+  background-position: center;
+}
+
+.project-list h2 {
+  font-size: 2em;
+  font-style: bold;
+  position: absolute;
+  display: inline-block;
+}
+
+.project-list p {
+  position: absolute;
+  left: 50px;
+  margin-top: 40px;
+  display: inline-block;
+}
+
+/*IMPORTANT CLASS*/
+/*.important {
+  z-index: 7;
+}*/

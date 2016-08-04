@@ -39,7 +39,7 @@ function hidePersonalStatement() {
 
 // BIO
 
-$('.close-section-button').on('click', function() {
+$('.close-bio').on('click', function() {
   closeBioSection();
 });
 
@@ -59,4 +59,46 @@ function showBioSection() {
   $('.bio-content').show();
 }
 
+// EXPERIENCE
+function showExperience() {
+  $('.work-experience-content').show();
+}
+
+function hideExpereince() {
+  $('.work-experience-content').hide();
+}
+
+$('#menu-nav-past-jobs').on('click', function() {
+  showExperience();
+});
+
+$('.close-experience').on('click', function() {
+  hideExpereince();
+});
+
+// PROJECT SECTION
+
+function showProjects() {
+  $('.project-content').show();
+}
+
+function hideProjects() {
+  $('.project-content').hide();
+}
+
+$('#menu-nav-projects').on('click', function() {
+  showProjects();
+});
+
+$('.close-projects').on('click', function() {
+  hideProjects();
+});
+
+// INCREASE IMPORTANCE
+// $(document).on('click', function() {
+//   increaseZindex();
+// });
 //
+// function increaseZindex() {
+//   $(this).toggle('.important');
+// }
