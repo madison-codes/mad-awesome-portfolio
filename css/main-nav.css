@@ -1,0 +1,126 @@
+/*HEADER*/
+header {
+  display: none;
+  /*position: fixed;*/
+}
+
+nav {
+  background-color: white;
+  opacity: .85;
+  height: 235px;
+  position: absolute;
+  width: 100%;
+  z-index: 4;
+}
+
+/*MENU BUTTON*/
+#menu-button-header-nav {
+  background-color: white;
+  border: 1px solid white;
+  border-bottom-right-radius:8px;
+  border-bottom-left-radius:8px;
+  color: grey;
+  height: 27px;
+  margin-left: 10%;
+  top: 0;
+  width: 50px;
+  position: fixed;
+}
+
+/*HEADER TOTAL LAYOUT*/
+#header-nav {
+  align-items: stretch;
+  display: flex;
+  justify-content: space-between;
+}
+
+/*PAGE LINKS*/
+#main-nav-link-container {
+  border-right: 1px solid grey;
+  height: 200;
+  position: fixed;
+  width: 300px;
+}
+
+h1 {
+  color: grey;
+  font-size: 1.4em;
+  margin: 30px;
+  margin-left: 40px;
+}
+
+.main-nav-internal-container-links {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  height: 100px;
+  margin-left: 40px;
+  width: 250px;
+}
+
+.main-nav-link {
+  color: grey;
+  height: 25px;
+  text-decoration: none;
+}
+
+.main-nav-link:hover {
+  color: aqua;
+  text-decoration: none;
+  transition-duration: .2s;
+  transition-property: color;
+  transition-timing-function: ease-out;
+}
+
+/*SOCAIL LINKS CONTAINER*/
+#main-nav-social-container {
+  margin: auto;
+}
+
+.social {
+  color: grey;
+  margin-top: 90%;
+  text-decoration: none;
+}
+
+.twitter-handle {
+  color: black;
+}
+
+.twitter-handle:hover {
+  color: aqua;
+}
+
+/*DOWNLOAD CONTAINER*/
+#main-nav-download-container {
+  background: url(../images/c1ca3497-2b40-44b4-8274-ab8e39a14c34.png) no-repeat;
+  background-position: center;
+  background-size: contain;
+  height: 230px;
+  margin-right: 40px;
+  right: 0;
+  position: fixed;
+  width: 300px;
+}
+
+#main-nav-download-container:hover {
+  opacity: .5;
+}
+#download-title {
+  margin: auto;
+}
+
+@media (max-width: 820px) {
+  #main-nav-social-container {
+    display: none;
+  }
+}
+
+@media (max-width: 630px) {
+   #main-nav-download-container {
+    display: none;
+  }
+   #main-nav-link-container {
+  border-right: 0px;
+  }
+}*/

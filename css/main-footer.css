@@ -1,0 +1,130 @@
+ footer {
+  background-color: white;
+  height: 60px;
+  bottom: 0;
+  width: 100%;
+  position: fixed;
+  display: flex;
+  justify-content: space-between;
+}
+
+/*LOGO CONTAINER*/
+#footer-title-container {
+  width: 250px;
+}
+
+#footer-title-container h1 {
+  margin: 20px;
+}
+
+/*LINK CONTAINER*/
+#footer-menu-container {
+  width: 100%;
+  color: black;
+  text-decoration: none;
+}
+
+.footer-nav-internal-container-links {
+  align-self: center;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  height: 100%;
+  width: 100%;
+}
+
+.footer-nav-link {
+  display: flex;
+  justify-content: space-around;
+  align-self: center;
+  font-weight: 900;
+  font-size: 1.3em;
+  width: 25%;
+}
+
+.footer-nav-link:hover {
+  color: aqua;
+  text-decoration: none;
+  transition-property: color;
+  transition-duration: .02s;
+  transition-timing-function: ease-out;
+}
+
+/*SOCIAL MEDIA CONTAINER*/
+#footer-nav-social-container {
+  width: 300px;
+  display: flex;
+  flex-direction: row;
+  height: 60px;
+  /*justify-content: flex-end;*/
+  right: 0;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.twitter {
+  background: url(../images/1470205092_03-twitter.png) no-repeat;
+  background-size: 50px;
+  border: none;
+  height: 50px;
+  width: 50px;
+  margin-right: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.github {
+  background: url(../images/1470205056_github.png) no-repeat;
+  background-size: 50px;
+  border: none;
+  height: 50px;
+  width: 50px;
+  margin-right: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#personal-statement {
+  border-top-right-radius:20px;
+  position:fixed;
+  left: 0;
+  bottom: 0;
+  background-color: white;
+  height: 270px;
+  width: 220px;
+  padding: 20px;
+  padding-left: 30px;
+  display: none;
+}
+
+#personal-statement h1 {
+  padding-top: 20px;
+  padding-bottom: 20px;
+  margin: auto;
+}
+
+#personal-statement p {
+  width: 200px;
+  margin-left: 0px;
+}
+
+.awesome {
+  font-family: 'Rock Salt', cursive;
+  color: black;
+}
+
+
+@media (max-width: 850px) {
+  #footer-title-container {
+    display: none;
+  }
+}
+
+@media (max-width: 450px) {
+  #footer-nav-social-container {
+    display: none;
+    width: 100%;
+  }
+}
